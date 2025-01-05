@@ -1,0 +1,422 @@
+.wrapper__body1
+{
+   
+    height:40rem;
+    margin-top:4rem;
+    margin-bottom:3rem;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:flex-start;
+    gap:2.5rem;
+
+    padding-top:1rem;
+
+    background-color:var(--clr-2);
+    border-radius:18px;
+}
+
+.beg
+{
+
+    margin-top:2rem;
+}
+
+
+.content__wrapper
+{
+    
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    width:90%;
+    gap:2rem;
+    padding-bottom:1rem;
+    border-bottom:1px dotted var(--clr-4);
+    
+    
+}
+
+
+
+.line
+{
+    border:1px solid var(--clr-1);
+    padding-top:5.3rem;
+}
+
+
+.img__body1
+{
+    height:5rem;
+    width:5rem;
+    margin-left:.5rem;
+}
+
+.description__body1
+{
+    max-width:40ch;
+    font-size:var(--size-xs);
+    text-align:center;
+
+}
+
+.description__body2
+{
+    max-width:40ch;
+    font-size:var(--size-xs);
+    
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding-right:0rem;
+   
+    padding-left:0rem;
+    
+ 
+
+  
+
+}
+
+.li_body
+{
+    margin-left:1.5rem;
+    font-size:var(--size-xs);
+    
+
+}
+
+
+
+
+.date
+{
+    max-width:60ch;
+    font-size:var(--size-xs);
+    text-align:center;
+    
+    color:var(--clr-4);
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+
+    gap:.5rem;
+}
+
+.datee
+{
+    color:var(--clr-4);
+    font-weight:800;
+}
+
+.inside
+{
+    
+    margin:0px;
+    
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+
+    gap:1rem;
+
+}
+
+
+
+
+
+.jackson 
+{
+
+    max-width:10ch;
+  
+    display:inline-block;
+    font-size:var(--size-xl);
+
+    font-weight: 700;
+}
+
+.jacksonn{
+display:none;
+}
+
+
+
+
+.jackson:hover
+{
+    color:var(--clr-19);
+}
+
+.green
+{
+    color:var(--clr-13);
+}
+
+.smallwrap
+{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+    gap:0.5rem;
+    
+}
+
+.subhead
+{
+    
+    font-size:var(--size-xl);
+    font-weight: 700;
+    color:var(--clr-4);
+   
+
+    
+    
+
+}
+
+.subhead2
+{
+    font-size:var(--size-xl);
+    font-weight: 700;
+    color:var(--clr-4);
+  
+    margin-left:4.9rem;
+    
+}
+
+/* xs */
+@media(min-width:475px){
+ 
+ }
+
+/* sm */
+ @media(min-width:640px){
+
+    .description__body1
+    {
+      
+        font-size:var(--size-sm);
+        
+    }
+
+
+    
+    .description__body2
+    {
+        
+        font-size:var(--size-sm);
+
+    
+    }
+    .inside
+    {
+        
+ 
+    
+        gap:2rem;
+    
+    }
+
+.subhead2
+{
+
+    margin-left:6.2rem;
+    
+}
+    
+
+.date
+{
+    font-size:var(--size-sm);
+
+}
+
+
+.wrapper__body1
+{
+    
+    height:41rem;
+ 
+
+}
+
+
+
+
+ }
+
+/* md */
+@media(min-width:768px){
+
+
+
+
+
+
+ }
+
+
+/* lg */
+@media(min-width:1024px){
+
+
+    .subhead2
+{
+
+    margin-left:.5rem;
+    
+}
+    
+
+.content__wrapper
+{
+    flex-direction:row;
+    justify-content:flex-start;
+}
+
+.inside
+{
+
+    flex-direction:row;
+
+}
+
+.wrapper__body1
+{
+    
+    height:22rem;
+ 
+
+}
+
+
+.description__body1
+{
+    max-width:35ch;
+
+    text-align:left;
+    
+    
+
+}
+
+.description__body2
+{
+
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    align-items:flex-start;
+   
+    padding-left:0rem;
+
+}
+
+
+
+.description__body2 li 
+{
+    text-align:left;
+
+    padding-left:0rem;
+}
+
+
+
+
+
+.date
+{
+    flex-direction:column;
+    
+}
+
+
+
+
+.degen{
+    max-width:15ch;
+   
+    display:inline-block;
+  
+    font-weight: 700;
+}
+
+
+
+.bells
+{
+    max-width:15ch;
+   
+    display:inline-block;
+    
+    font-weight: 700;
+}
+
+
+
+.jackson 
+{
+
+    max-width:15ch;
+  
+    display:inline-block;
+   
+
+    font-weight: 700;
+}
+
+
+
+
+}
+
+/* xl */
+@media(min-width:1280px){
+    .date
+    {
+        justify-content:flex-start;
+        align-items:flex-start;
+        
+    }
+
+.inside{
+    gap:4rem;
+}
+
+.content__wrapper{
+    gap:4rem;
+}
+
+
+} 
+
+/* 2xl */
+@media(min-width:1536px){
+
+    .inside{
+        gap:9rem;
+    }
+    
+    .content__wrapper{
+        gap:6rem;
+    }
+    
+
+    .description__body2 
+{
+    max-width:37ch;
+ 
+}
+
+
+} 
+
