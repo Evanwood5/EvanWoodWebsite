@@ -137,6 +137,7 @@ display:block;
   
     padding:.2rem;
     padding-left:1rem;
+    
     margin-bottom:.25rem;
     color:var(--clr-4);
    
@@ -145,6 +146,8 @@ display:block;
     justify-content:center;
     align-items:center;
     gap:.4rem;
+
+    
    
 }
 
@@ -162,6 +165,8 @@ display:block;
     align-items:center;
     gap:.4rem;
 
+   
+
 
 }
 
@@ -178,7 +183,7 @@ color:rgb(49, 48, 48);
     
     color: var(--clr-13);
     
-  
+
 }
 
 .active-tab {

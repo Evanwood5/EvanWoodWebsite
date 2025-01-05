@@ -26,30 +26,3 @@ document.addEventListener('DOMContentLoaded', () =>
 
 
 
-function darkmode()
-{
-    const moon = document.querySelector(".moon");
-
-    const sun = document.querySelector(".sun");
-
-    const body = document.body;
-
-    if(moon.style.display === "flex" )
-    {
-        moon.style.display = "none";
-        sun.style.display = "flex";
-        body.classList.add("darkMode");
-        
-
-
-    }
-    else
-    {
-        moon.style.display = "flex";
-        sun.style.display = "none";
-        body.classList.remove("darkMode");
-    }
-
-
-
-}

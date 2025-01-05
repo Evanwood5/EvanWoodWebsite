@@ -24,13 +24,17 @@
               {
                 "glob": "**/*",
                 "input": "public"
-              }
+              },
+              "src/assets"
+              
             ],
             "styles": [
               "src/styles.css"
             ],
             "scripts": ["src/app/components/header/header.js", 
-            "src/app/components/mobile/mobile.js"],
+            "src/app/components/mobile/mobile.js",
+            "src/darkmode.js"
+          ],
             "server": "src/main.server.ts",
             "prerender": true,
             "ssr": {
