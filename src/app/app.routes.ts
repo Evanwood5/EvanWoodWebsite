@@ -6,7 +6,7 @@ import { Main2Component } from './projects/main2/main2.component';
 export const routes: Routes = [
     //makes it so home is the first page loaded up
  
-
+  { path: '', component: MainComponent },
   
   { path: 'Home', component: MainComponent },
   { path: 'Work', component: Main1Component },
