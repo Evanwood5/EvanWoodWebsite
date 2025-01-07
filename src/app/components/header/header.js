@@ -10,19 +10,25 @@ function setActiveTab(event) {
 
     // Add 'active-tab' to the clicked link
     clickedLink.classList.add('active-tab');
+
+    // Store the active tab in sessionStorage
+    sessionStorage.setItem('activeTab', clickedLink.getAttribute('href'));
 }
 
-// Set "Home" as the default active tab on page load
-document.addEventListener('DOMContentLoaded', () => 
-    {
-    
-    const homeLink = document.querySelector('.home.nav-link');
+// Set the correct active tab on page load based on the URL
+document.addEventListener('DOMContentLoaded', () => {
+    const currentPath = window.location.pathname; // Get the current URL path
+    let activeLink = document.querySelector(`.nav-link[href="${currentPath}"]`);
 
-
-    if (!document.querySelector('.active-tab') && homeLink) {
-        homeLink.classList.add('active-tab');
+    if (activeLink) {
+        activeLink.classList.add('active-tab');
+    } else {
+        // If no specific path matches, default to "Home"
+        document.querySelector('.home.nav-link').classList.add('active-tab');
     }
 });
 
-
-
+// Attach event listeners to navigation links
+document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', setActiveTab);
+});
