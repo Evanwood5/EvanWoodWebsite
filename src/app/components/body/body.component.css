@@ -53,7 +53,9 @@ margin-left:.5rem;
     
     font-size:var(--size-xs);
    
-    max-width:30ch;
+    max-width:25ch;
+    padding-right:1rem;
+
 
 }
 .green
@@ -175,6 +177,13 @@ margin-left:.5rem;
 /* xs */
 @media(min-width:475px)
 {
+    .content1__body
+{
+
+
+
+
+}
 
 
 

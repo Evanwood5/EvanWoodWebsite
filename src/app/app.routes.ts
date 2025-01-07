@@ -5,7 +5,7 @@ import { Main2Component } from './projects/main2/main2.component';
 
 export const routes: Routes = [
     //makes it so home is the first page loaded up
-  { path: '', component: MainComponent }, // Default route
+ 
 
   
   { path: 'Home', component: MainComponent },
