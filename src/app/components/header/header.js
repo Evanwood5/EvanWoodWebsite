@@ -1,8 +1,5 @@
 function setActiveTab(event) {
-    // Find the closest <a> element with the 'nav-link' class
     const clickedLink = event.target.closest('.nav-link');
-
-    // If no such <a> element is found, exit the function
     if (!clickedLink) return;
 
     // Remove 'active-tab' from all nav links
@@ -15,20 +12,27 @@ function setActiveTab(event) {
     sessionStorage.setItem('activeTab', clickedLink.getAttribute('href'));
 }
 
-// Set the correct active tab on page load based on the URL
-document.addEventListener('DOMContentLoaded', () => {
-    const currentPath = window.location.pathname; // Get the current URL path
-    let activeLink = document.querySelector(`.nav-link[href="${currentPath}"]`);
+// Function to update active tab based on current route
+function updateActiveTab() {
+    const currentPath = window.location.pathname;
+    document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active-tab'));
 
+    const activeLink = document.querySelector(`.nav-link[href="${currentPath}"]`);
     if (activeLink) {
         activeLink.classList.add('active-tab');
     } else {
-        // If no specific path matches, default to "Home"
+        // Default to "Home" if no match is found
         document.querySelector('.home.nav-link').classList.add('active-tab');
     }
-});
+}
 
-// Attach event listeners to navigation links
+// Run on initial load
+document.addEventListener('DOMContentLoaded', updateActiveTab);
+
+// Run when clicking a navigation link
 document.querySelectorAll('.nav-link').forEach(link => {
     link.addEventListener('click', setActiveTab);
 });
+
+// Run when using browser back/forward buttons
+window.addEventListener('popstate', updateActiveTab);
