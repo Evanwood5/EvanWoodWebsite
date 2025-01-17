@@ -109,7 +109,7 @@ margin-left:.5rem;
 .content3__body
 {
    
-    height:15rem;
+    height:25rem;
     background-color:var(--clr-2);
     margin-top:2rem;
     border-radius:18px;
@@ -129,6 +129,7 @@ margin-left:.5rem;
     align-items:left;
     display:1px solid green;
     gap:2rem;
+     flex-wrap:wrap;
 }
 
 .con3__body
@@ -223,7 +224,12 @@ margin-left:.5rem;
     .flexing
 {
   
-    gap:9.5rem;
+    gap:4rem;
+}
+
+.content3__body
+{
+    height:17rem;
 }
     
 
@@ -261,8 +267,10 @@ margin-left:.5rem;
     .flexing
     {
       
-        gap:13.3rem;
+        gap:5.5rem;
     }
+
+
 
 
  }
@@ -303,7 +311,7 @@ margin-left:.5rem;
 
 .flexing{
     flex-direction:column;
-    gap:4rem;
+    gap:1rem;
 }
 
 
