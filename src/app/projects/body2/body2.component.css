@@ -414,7 +414,17 @@ display:none;
     .description__body2 
 {
     max-width:37ch;
- 
+    
+}
+
+.description__body1
+{
+    font-size:var(--size-sm);
+}
+
+.li_body
+{
+    font-size:var(--size-sm);
 }
 
 
