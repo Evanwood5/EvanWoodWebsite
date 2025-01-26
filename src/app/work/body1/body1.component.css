@@ -464,10 +464,17 @@ display:none;
 
     .description__body2 
 {
-    max-width:34ch;
+    max-width:36ch;
  
 }
 
+
+.description__body1
+{
+    max-width:34ch;
+
+
+}
 
 } 
 
