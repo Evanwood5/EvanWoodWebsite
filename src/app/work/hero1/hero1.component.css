@@ -17,6 +17,11 @@
 
 }
 
+.coding_guy
+{
+    width:4rem;
+}
+
 /* xs */
 @media(min-width:475px)
 {
@@ -64,6 +69,12 @@
 /* 2xl */
 @media(min-width:1536px)
 {
+
+    .title__hero1 img
+    {
+        width:5rem;
+        padding-left:1rem;
+    }
 
 
 } 

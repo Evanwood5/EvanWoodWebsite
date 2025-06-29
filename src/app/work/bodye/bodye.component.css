@@ -19,7 +19,7 @@
 /* ============
    HEADER
    ============ */
-.head {
+.head, h1 {
   width: 100%;
   text-align: center;
   font-size: var(--size-4xl);
@@ -37,7 +37,6 @@
   gap: 2rem;
   width: 100%;
   max-width: 1200px;
-
   padding: 1.5rem;
   border-radius: 12px;
   background-color: var(--clr-2);
@@ -168,7 +167,8 @@
   padding-top: 5.3rem;
 }
 
-.above {
+.above,
+.over {
   border-top: 1px dotted var(--clr-1);
   padding-top: 1rem;
 }
@@ -184,22 +184,11 @@
   justify-content: flex-start;
 }
 
-
 /* ===============
    RESPONSIVENESS
    =============== */
 @media (min-width: 640px) {
-  .wrapper__body1 {
-    align-items: center;
-    padding: 2rem 2rem;
-  }
-  .content__wrapper {
-    align-items: center;
-  }
-  .inside {
-    gap: 2rem;
-    align-items: center;
-  }
+  .li_bodyy { margin-left: 0rem; }
   .description__body1,
   .description__body2,
   .date {
@@ -207,22 +196,14 @@
     text-align: center;
     align-items: center;
   }
-  .date {
-    flex-direction: row;
-    justify-content: center;
+  .inside {
+    gap: 2rem;
     align-items: center;
   }
-  .li_bodyy {
-    margin-left: 0;
-    width: 100%;
+  .content__wrapper {
+    align-items: center;
   }
 }
-  .description__body1,
-  .description__body2,
-  .date { font-size: var(--size-sm); }
-  .inside { gap: 2rem; }
-  .wrapper__body1 { height: auto; }
-
 
 @media (min-width: 1024px) {
   .wrapper__body1 {
@@ -259,17 +240,15 @@
   .subhead2 {
     margin-left: 0.4rem;
   }
-  .description__body2 { max-width: 64ch;  }
-
+  .description__body2 { max-width: 64ch; }
 }
 
 @media (min-width: 1280px) {
   .inside { gap: 4rem; }
   .content__wrapper { gap: 4rem; }
-    .description__body2 { max-width: 50ch;  }
+  .description__body2 { max-width: 50ch; }
   .inside { gap: 7rem; }
   .description__body1 { max-width: 34ch; width: 80ch; }
-
   .beg { margin-top: 1rem; }
 }
 
@@ -284,7 +263,7 @@
   }
   .inside { gap: 10rem; }
   .description__body1 { max-width: 34ch; width: 80ch; }
-  .description__body2 { max-width: 70ch;  }
+  .description__body2 { max-width: 70ch; }
   .beg { margin-top: 1rem; }
-  .date{width:20ch;}
+  .date { width: 20ch; }
 }

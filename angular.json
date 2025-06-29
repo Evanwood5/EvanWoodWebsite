@@ -30,11 +30,14 @@
               
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+               
+                "node_modules/swiper/swiper-bundle.min.css"
             ],
             "scripts": ["src/app/components/header/header.js", 
             "src/app/components/mobile/mobile.js",
-            "src/darkmode.js"
+            "src/darkmode.js",
+            "src/app/projects/body2/swipe.js"
           ],
             "server": "src/main.server.ts",
             "prerender": true,

@@ -17,6 +17,14 @@
 
 }
 
+    .coding_guy
+    {
+        margin-left:1rem;
+        width:3rem;
+        height:3rem;
+    }
+
+
 /* xs */
 @media(min-width:475px)
 {
@@ -64,6 +72,13 @@
 /* 2xl */
 @media(min-width:1536px)
 {
+
+    .coding_guy
+    {
+        margin-left:1rem;
+        width:5rem;
+        height:5rem;
+    }
 
 
 } 

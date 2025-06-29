@@ -119,6 +119,7 @@
     --clr-17:#006432;
     --clr-19:#3AE459;
     
+    
     /*rose rgb(220, 38, 38) */
     
     /*indigo rgb(79, 70, 229)*/
@@ -140,6 +141,8 @@
     --size-8xl: 6rem;
     --size-9xl: 8rem;
     --size-10xl: 10rem;
+    --clr-20:#f0f0f0;
+    --clr-21:#dcdcdc;
     
     }
 
@@ -160,6 +163,9 @@
         --clr-16:black;
         --clr-17:white;
         --clr-5:#1E2124 ;
+        --clr-20:#1e1e1e;
+        --clr-21:#1e1e1e;
+        --clr-22:#969696;
     }
 
     *
