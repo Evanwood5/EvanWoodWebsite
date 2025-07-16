@@ -1,0 +1,232 @@
+.wrapper__body1 {
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2.5rem;
+  padding-top: 1rem;
+  background-color: var(--clr-2);
+  border-radius: 18px;
+  height: auto;
+}
+
+.header {
+  padding: 1rem 0;
+  text-align: left;
+  width: 90%;
+  font-size: var(--size-2xl);
+  margin-bottom: 0rem;
+  padding-left: 5rem;
+}
+
+.webscrape {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  padding: 2rem 1rem;
+  width: 100%;
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.webscrape::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  border-top: 1px dotted var(--clr-1);
+  border-radius: 999px 999px 0 0;
+  z-index: 1;
+}
+
+.link {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.scraper-wrapper {
+  position: relative;
+  width: 13rem;
+  height: 23rem;
+  flex-shrink: 0;
+  perspective: 1000px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+.card.flipped {
+  transform: rotateY(180deg);
+}
+
+.card-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 7px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  background-color: white; /* Ensure card-back also appears as white card */
+  border-radius: 7px;
+}
+
+.scraper-back {
+  width: 8rem; /* Or any size you want for QR code */
+  height: auto;
+  object-fit: contain;
+}
+
+.scraper {
+  border-radius: 7px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: block;
+  width: 100%;
+  height: 23rem;
+}
+
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  max-width: 60ch;
+  flex: 1;
+  font-size: var(--size-sm);
+}
+
+.description ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.utils {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 10.5rem;
+  height: auto;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.pad {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.inv {
+  visibility: hidden;
+}
+
+.butn {
+  width: 3.9rem;
+  height: 3.5rem;
+  padding: 0.6rem;
+  border-radius: 12px;
+  background-color: var(--clr-20);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.butn:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 6px 16px rgba(255, 255, 255, 0.2);
+}
+
+.butnn {
+  width: 3.9rem;
+  height: 3.5rem;
+  padding: 0.6rem;
+  border-radius: 12px;
+  background-color: var(--clr-22);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.butnn:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 6px 16px rgba(255, 255, 255, 0.2);
+}
+
+.AI {
+  margin: 1.5rem;
+  color:var(--clr-1);
+}
+
+/* Responsive Tweaks */
+@media (min-width: 768px) {
+  .webscrape {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 2.5rem;
+    padding-left: 5rem;
+    width: 90%;
+  }
+
+  .utils {
+    align-items: flex-start;
+    width: auto;
+  }
+}
+
+@media (min-width: 1536px) {
+  .header {
+    width: 80%;
+  }
+
+  .webscrape {
+    width: 80%;
+  }
+
+  .description ul,
+  .one,
+  .two,
+  .three {
+    font-size: var(--size-base);
+  }
+}

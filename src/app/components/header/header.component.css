@@ -1,0 +1,234 @@
+
+.wrapper__header 
+{
+display:none;
+
+}
+
+
+
+
+/* xs */
+@media(min-width:475px){
+
+
+ }
+
+/* sm */
+ @media(min-width:640px){
+
+ }
+
+/* md */
+@media(min-width:768px){
+
+
+.wrapper__header
+{
+display:block;
+
+}
+
+.wrapper__header
+{
+  
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    align-items:center;
+    margin-top:.5rem;
+   
+    padding:.3rem;
+    
+    border-radius:18px;
+    background-color:var(--clr-2);
+}
+
+.front__header
+{
+    
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+    gap:.3rem;
+    text-transform:capitalize;
+   
+    
+}
+.front__header a
+{
+    text-decoration:none;
+}
+
+
+.back__header
+{  
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-end;
+    align-items:flex-end;
+    gap:1rem;
+    text-transform:capitalize;
+    text-decoration:none;
+
+}
+
+
+.back__header a
+{
+    text-decoration:none;
+}
+
+
+.back__header i
+{
+    padding-right:.1rem;
+}
+
+
+.line
+{
+    border:1px solid var(--clr-1);
+    padding-top:1.7rem;
+
+}
+
+
+
+
+.home
+{
+    font-size:var(--size-xs);
+    
+    padding:.2rem;
+    
+    color:var(--clr-4);
+    transition: transform 0.4s ease, border-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+}
+
+.work
+{
+    font-size:var(--size-xs);
+  
+    padding:.2rem;
+ 
+    color:var(--clr-4);
+    transition: transform 0.4s ease, border-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+    
+
+}
+
+
+.projects
+{
+    font-size:var(--size-xs);
+    
+    padding:.2rem;
+    
+    color:var(--clr-4);
+    transition: transform 0.2s ease, border-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+}
+
+.moon
+{
+
+    font-size:var(--size-xs);
+  
+    padding:.2rem;
+    padding-left:1rem;
+    
+    margin-bottom:.25rem;
+    color:var(--clr-4);
+   
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    gap:.4rem;
+
+    
+   
+}
+
+.sun
+{
+    font-size:var(--size-xs);
+  
+    padding:.2rem;
+    margin-bottom:.25rem;
+    color:var(--clr-4);
+   
+    display:none;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    gap:.4rem;
+
+   
+
+
+}
+
+.moon:hover{
+color:rgb(49, 48, 48);
+}
+
+.sun:hover{
+    color:white;
+}
+
+
+.nav-link:not(.active-tab):hover {
+    
+    color: var(--clr-13);
+    
+
+}
+
+.active-tab {
+  color: var(--clr-13); /* Add a background color for active tab */
+   
+    font-weight: bold; /* Make the text bold */
+   
+    padding: 0.2rem; /* Maintain consistent padding */
+ 
+}
+
+ }
+
+
+/* lg */
+@media(min-width:1024px){
+
+}
+
+/* xl */
+@media(min-width:1280px){
+
+} 
+
+/* 2xl */
+@media(min-width:1536px){
+
+.home
+{
+    font-size:var(--size-sm);
+    
+}
+
+.work
+{
+    font-size:var(--size-sm);
+  
+}
+
+
+.projects
+{
+    font-size:var(--size-sm);
+ 
+}
+
+
+} 

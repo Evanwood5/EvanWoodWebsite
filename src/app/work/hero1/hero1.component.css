@@ -1,0 +1,81 @@
+.title__hero1
+{
+    
+    height:10rem;
+
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    font-size:var(--size-base);
+    text-transform:capitalize;
+    background-color:var(--clr-2);
+    border-radius:18px;
+    margin-top:1.5rem;
+    text-align:center;
+    color:var(--clr-1);
+
+}
+
+.coding_guy
+{
+    width:4rem;
+}
+
+/* xs */
+@media(min-width:475px)
+{
+
+
+ }
+
+/* sm */
+ @media(min-width:640px)
+ {
+
+
+
+ }
+
+/* md */
+@media(min-width:768px)
+{
+
+
+ }
+
+
+/* lg */
+@media(min-width:1024px)
+{
+
+
+}
+
+/* xl */
+@media(min-width:1280px)
+{
+
+    .title__hero1
+{
+
+    font-size:var(--size-lg);
+  
+    
+}
+
+} 
+
+/* 2xl */
+@media(min-width:1536px)
+{
+
+    .title__hero1 img
+    {
+        width:5rem;
+        padding-left:1rem;
+    }
+
+
+} 
+

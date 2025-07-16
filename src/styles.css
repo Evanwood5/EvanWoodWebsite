@@ -1,0 +1,241 @@
+/* You can add global styles to this file, and also import other style files */
+
+.btn{
+    display:inline-block;
+    font-weight:600;
+    text-decoration:none;
+    letter-spacing:-0.05em;
+    background-color: var(--clr-6);
+    color: #f1f5f9;
+
+    /*em padding to be proportional to text of button*/
+    padding: .5em 1em;
+    border-radius:6px;
+    /*aning an "a" and a number at the end gives us an opacity for our color */
+    box-shadow: 0 10px 20px rgba(98, 216, 83, 0.5),
+     0 6px 6px rgba(68, 163, 84, 0.5),
+    0 0 100px -10px var(--clr-6);
+
+    transition: transform 0.3s, box-shadow .3s;
+}
+
+
+.btn:hover{
+    transform:translateY(-3px);
+
+    box-shadow: 0 14px 28px  rgba(98, 216, 83, 0.25),
+    0 10px 10px rgba(68, 163, 84, 0.22),
+   0 0 120px -10px var(--clr-rose);
+}
+
+
+/*building mobile first using min, everything by defult is for smaller screens then 475px*/
+
+/*dont short hand container like setting margin to 0 as this will not allow us to customize elemts within*/
+.container {
+
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    box-sizing: border-box; /* Make sure padding is included in width */
+    
+
+}
+
+/* xs */
+@media(min-width:475px){
+    /*this is what will make our viewport shrink as our container touches it
+    also making max width of this container 475 px*/
+    .container {
+        max-width:475px;
+    }
+ }
+
+/* sm */
+ @media(min-width:640px){
+    .container {
+        max-width:640px;
+    }
+ }
+
+/* md */
+@media(min-width:768px){
+    .container {
+        max-width:768px;
+    }
+ }
+
+
+/* lg */
+@media(min-width:1024px){
+    .container {
+        max-width:1024px;
+    }
+}
+
+/* xl */
+@media(min-width:1280px){
+    .container {
+        max-width:1280px;
+    }
+} 
+
+/* 2xl */
+@media(min-width:1536px){
+    .container {
+        max-width:1536px;
+    }
+} 
+
+
+
+/*we use this to space out our containers*/
+.section
+{
+    margin-top:5rem;
+}
+
+
+/*this is where we wil build our color variables and sizing variables*/
+:root{
+    --clr-1: #0a0a0a ;
+    --clr-2:white ;
+    --clr-3:#94a3b8 ;
+    --clr-4:#5c687a ;
+    --clr-5:#1E2124 ;
+    --clr-6: #F4F2EE;
+    --clr-7:#0A66C2;
+    --clr-8:#004F39;
+    --clr-9:#B2BEBC;
+    --clr-10:#006432;
+    --clr-11:white;
+    --clr-12:#5c687a;
+    --clr-13:#006432;
+    --clr-14:#006432;
+    --clr-15:#006432;
+    --clr-16:#5c687a;
+    --clr-17:#006432;
+    --clr-19:#3AE459;
+    --clr-23:#707070;
+    
+    
+    /*rose rgb(220, 38, 38) */
+    
+    /*indigo rgb(79, 70, 229)*/
+    
+    /*sizes from tailwind css*/
+    --size-xxs: .5rem ;
+    --size-xs: .75rem ;
+    --size-sm: .875rem;
+    --size-base: 1rem ;
+    --size-lg: 1.125rem;
+    --size-xl: 1.25rem ;
+    --size-2xl: 1.5rem ;
+    --size-2_5xl:1.6rem;
+    --size-3xl:1.875rem ;
+    --size-4xl: 2.25rem;
+    --size-5xl: 3rem;
+    --size-6xl: 3.75rem;
+    --size-7xl: 4.5rem;
+    --size-8xl: 6rem;
+    --size-9xl: 8rem;
+    --size-10xl: 10rem;
+    --clr-20:#f0f0f0;
+    --clr-21:#dcdcdc;
+    
+    }
+
+
+    .darkMode
+    {
+        --clr-6:#2C2F31 ;
+        --clr-2:#0a0a0a;
+        --clr-4:#c7c3c3;
+        --clr-1:white;
+        --clr-8:#3AE459;
+        --clr-10:black;
+        --clr-11:#c7c3c3;
+        --clr-12:black;
+        --clr-13:#3AE459;
+        --clr-14:white;
+        --clr-15:black;
+        --clr-16:black;
+        --clr-17:white;
+        --clr-5:#1E2124 ;
+        --clr-20:#1e1e1e;
+        --clr-21:#1e1e1e;
+        --clr-22:#969696;
+    }
+
+    *
+    {
+        
+        margin:0;
+    
+        /*this allows for correct line height regardless of font size*/
+        line-height: calc(1em + .5rem);
+       
+         
+    }
+    
+    html{
+        /*this makes scrolling to different sections a transition*/
+        scroll-behavior:smooth;
+      
+    }
+
+
+body{
+    font-family: 'General Sans',sans-serif;
+    background-color:var(--clr-6);
+    color:var(--clr-4);
+    overflow-x: hidden;
+}
+
+
+img,
+picture,
+video,
+canvas,
+svg{
+
+    /*helps with everthing coltrol wise (padding, sizing, etc*/
+    display:block;
+    /*Ensures the elements do not overflow their container.*/
+    max-width: 100%;
+    /*pevents users from selecting or highlighting these elements.*/
+    user-select: none;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+
+button{
+    /*makes button look very bland but we do this to not have to mess with defualt settings*/
+    display: inline-block;
+    padding:0;
+    border:none;
+    background:none;
+    cursor:pointer;
+    /*this will make our color inherent the color of its parent*/
+    color:inherit;
+
+}
+
+a{
+    color:var(--clr-rose)
+}
+
+strong{
+    color:var(--clr-14);
+}
+
+
+.swiper-pagination-bullets {
+    color: #f1f1f1 ;
+   
+}
