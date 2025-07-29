@@ -2,6 +2,7 @@ import { Routes } from '@angular/router';
 import { MainComponent } from './components/main/main.component';
 import { Main1Component } from './work/main1/main1.component';
 import { Main2Component } from './projects/main2/main2.component';
+import { Main3Component } from './cloud/main3/main3.component';
 
 export const routes: Routes = [
     //makes it so home is the first page loaded up
@@ -11,4 +12,5 @@ export const routes: Routes = [
   { path: 'Home', component: MainComponent },
   { path: 'Work', component: Main1Component },
   { path: 'Projects', component: Main2Component },
+  { path: 'Cloud', component: Main3Component },
 ];

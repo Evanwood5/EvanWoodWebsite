@@ -48,15 +48,47 @@
 .link {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
   gap: 1rem;
+  width: 100%;
+}
+
+.link-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 5rem;
+}
+
+.one,
+.two {
+  font-weight: 600;
+  color: var(--clr-1);
+}
+
+/* Fix alignment for .one at 758px+ */
+@media (max-width: 1024px) {
+  .one {
+    padding-left: 2rem;
+  }
+}
+
+.link-content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-left: 5rem;
+  box-sizing: border-box;
 }
 
 .scraper-wrapper {
   position: relative;
-  width: 13rem;
-  height: 23rem;
+  width: 100%;
+  max-width: 48rem;
+  height: auto;
   flex-shrink: 0;
   perspective: 1000px;
   cursor: pointer;
@@ -89,12 +121,12 @@
 
 .card-back {
   transform: rotateY(180deg);
-  background-color: rgb(187, 187, 187); /* Ensure card-back also appears as white card */
+  background-color: rgb(187, 187, 187);
   border-radius: 7px;
 }
 
 .scraper-back {
-  width: 8rem; /* Or any size you want for QR code */
+  width: 8rem;
   height: auto;
   object-fit: contain;
 }
@@ -104,9 +136,9 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: block;
   width: 100%;
-  height: 23rem;
+  max-width: 48rem;
+  height: auto;
 }
-
 
 .description {
   display: flex;
@@ -114,7 +146,7 @@
   align-items: flex-start;
   justify-content: flex-start;
   gap: 0.5rem;
-  max-width: 60ch;
+  max-width: 32ch;
   flex: 1;
   font-size: var(--size-sm);
 }
@@ -193,7 +225,7 @@
 
 .AI {
   margin: 1.5rem;
-  color:var(--clr-1);
+  color: var(--clr-1);
 }
 
 /* Responsive Tweaks */
@@ -204,13 +236,17 @@
     align-items: flex-start;
     justify-content: space-between;
     gap: 2.5rem;
-    padding-left: 5rem;
+    padding-left: 0rem;
     width: 90%;
   }
 
   .utils {
     align-items: flex-start;
     width: auto;
+  }
+
+  .one {
+    padding-left: 5rem;
   }
 }
 
@@ -228,5 +264,41 @@
   .two,
   .three {
     font-size: var(--size-base);
+  }
+
+  .description {
+    max-width: 50ch;
+    padding-right: 0rem;
+  }
+
+  .two {
+    margin-right: 9.5rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .link-header {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-left: 0;
+    align-items: center;
+  }
+
+  .link-content {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+  }
+
+  .description {
+    align-items: center;
+    text-align: center;
+  }
+
+  .one,
+  .two {
+    padding-left: 0;
+    margin-left: 0rem;
+    text-align: center;
   }
 }
